@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="fcf89d9c-dff3-4221-b7dc-39af591fc7ca" Version="1.0.0.0" Publisher="CN=Devin" />
+  <Identity Name="fcf89d9c-dff3-4221-b7dc-39af591fc7ca" Version="1.1.1.1" Publisher="CN=Devin" />
   <Properties>
     <DisplayName>Dotapanion</DisplayName>
     <PublisherDisplayName>Wonderful Failure LLC</PublisherDisplayName>

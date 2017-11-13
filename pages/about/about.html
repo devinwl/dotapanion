@@ -1,0 +1,35 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>About flyout</title>
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+        <link href="about.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="aboutPane" data-win-control="WinJS.UI.SettingsFlyout" aria-label="Legal notices settings flyout"
+                data-win-options="{width:'narrow'}">
+            <div class="win-header" style="background-color:#2a4253">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">About</div>
+            </div>
+            <div class="win-content">
+                Version 1.0.0.1<br />
+                Developed by Devin Lumley<br /><br />
+                Published by Wonderful Failure LLC<br /><br />
+                Contact<br />
+                <a href="mailto:support@wonderfulfailure.com">support@wonderfulfailure.com</a><br /><br />
+                Twitter<br />
+                <a href="https://twitter.com/devinwl">@devinwl</a><br /><br />
+                Special Thanks<br />
+                zimty
+                <br /><br />
+                <a href="http://wonderfulfailure.com/dotapanion/privacypolicy.html">Privacy policy</a>
+            </div>
+        </div>
+        <!-- ENDTEMPLATE -->
+    </body>
+</html>

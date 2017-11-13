@@ -9,8 +9,6 @@
     var emptyFilter = ";;;";
 
     WinJS.UI.Pages.define("/pages/heroes/heroes.html", {
-        // This function is called whenever a user navigates to this page. It
-        // populates the page elements with the app's data.
         ready: function (element, options) {
             WinJS.Application.sessionState.currentPage = "heroes";
 
@@ -59,7 +57,6 @@
         },
 
         updateLayout: function (element, viewState, lastViewState) {
-            /// <param name="element" domElement="true" />
             var viewState = Windows.UI.ViewManagement.ApplicationView.value;
             var lV = document.getElementById("heroListView").winControl;
 
@@ -70,7 +67,6 @@
                 lV.layout = { type: WinJS.UI.GridLayout };
             }
 
-            // TODO: Respond to changes in viewState.
             if (WinJS.Application.sessionState.formedFilter) {
                 formedFilter = WinJS.Application.sessionState.formedFilter;
             }
@@ -89,8 +85,19 @@
             var textContainerDiv = document.createElement("div");
             textContainerDiv.setAttribute("class", "text-container");
             var img = document.createElement("img");
+
+            var miniHero = document.createElement('div');
+            var miniHeroImg = document.createElement('img');
+            miniHeroImg.src = "images/miniheroes/" + item.data.heroNameBasic + ".png";
+            miniHero.setAttribute('class', 'mini');
+            miniHero.appendChild(miniHeroImg);
+
             img.src = "images/heroes/" + item.data.heroNameBasic + ".png";
+            img.setAttribute('class', 'full');
+
             div.appendChild(img);
+            div.appendChild(miniHero);
+
             var h3 = document.createElement("h3");
 
             var roles = [];
@@ -102,12 +109,17 @@
             roles = roles.join(", ");
 
             h3.innerText = item.data.heroName.toUpperCase();
-            //div.appendChild(h3);
+
+            if (item.data.heroAttr == "str") {
+                h3.setAttribute('class', 'str');
+            } else if (item.data.heroAttr == "agi") {
+                h3.setAttribute('class', 'agi');
+            } else {
+                h3.setAttribute('class', 'int');
+            }
 
             var h5 = document.createElement("h5");
             h5.textContent = roles;
-
-            //div.appendChild(h5);
 
             textContainerDiv.appendChild(h3);
             textContainerDiv.appendChild(h5);
@@ -181,12 +193,12 @@
         if (WinJS.Application.sessionState.textFilter)
             document.getElementById("heroTextFilter").setAttribute("value", WinJS.Application.sessionState.textFilter);
 
-        lV.itemDataSource = filtered.dataSource;
         dataSource = filtered;
+
+        lV.itemDataSource = filtered.dataSource;
     }
 
     function filterFunction(item) {
-
         var result = true;
 
         if(formedFilter)
@@ -205,14 +217,16 @@
         return result;
     }
 
-    function clearInput() {
-        if(document.getElementById("heroTextFilter").value == defaultFilterText)
-            document.getElementById("heroTextFilter").setAttribute("value", "");
+    function updateSorting() {
+        dataSource = Data.heroes.createSorted(descComp);
     }
 
-    function restoreInput() {
-        if (document.getElementById("heroTextFilter").value == "") {
-            document.getElementById("heroTextFilter").setAttribute("value", defaultFilterText);
-        }
+    function descComp(first, second) {
+        if (first == second)
+            return 0;
+        else if (first > second)
+            return 1;
+        else
+            return -1;
     }
 })();

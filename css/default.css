@@ -100,4 +100,20 @@ progress.withText
     background: #0B1217;
 }
 
-.win-appbar 
+.win-settingsflyout {
+   border-left: none!important;
+}
+
+@media (max-width: 320px) and (-ms-view-state: snapped) {
+    .fragment {
+        -ms-grid-rows: 90px 1fr;
+    }
+
+    .fragment header[role=banner] .titlearea {
+        margin-top: 27px;
+    }
+
+    .fragment header[role=banner] .win-backbutton {
+        margin-top: 34px;
+    }
+}

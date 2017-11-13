@@ -11,12 +11,12 @@
 
             var item = options && options.item ? options.item : Data.heroes.getAt(0);
             WinJS.Application.sessionState.currentItem = item;
-            document.getElementById("view-on-dotabuff").setAttribute("style", "");
 
             element.querySelector(".titlearea .pagetitle").textContent = item.heroName;
             var heroImg = element.querySelector(".hero_header > img");
             heroImg.src = "/images/heroes/" + item.heroNameBasic + ".png";
-            element.querySelector(".hero_roles > h2 > .type").textContent = item.heroType;
+            element.querySelector(".hero_team_type > .type").textContent = item.heroType;
+            element.querySelector(".hero_team_type > .team").textContent = item.heroTeam == "radiant" ? "The Radiant" : "The Dire";
             var heroRolesUl = element.querySelector(".hero_roles > ul");
             var heroRolesLi = element.querySelector(".hero_roles > ul > li");
             heroRolesUl.textContent = "";
@@ -33,6 +33,9 @@
             }
 
             element.querySelector("." + item.heroAttr).setAttribute("class", "prim_attr");
+
+            var heroSound = element.querySelector('.hero_sound');
+            heroSound.textContent = "";
 
             element.querySelector(".strBase").textContent = item.heroBaseStr;
             element.querySelector(".strPer").textContent = item.heroStrPerLevel;
@@ -77,12 +80,12 @@
 
                 div.querySelector(".hero_skill_descr").textContent = ability.abilityDescription;
 
-                if (ability.abilityManaCost != "")
+                if (!isEmpty(ability.abilityManaCost))
                     div.querySelector(".hero_skill_manacost").innerHTML = format(ability.abilityManaCost);
                 else
                     div.querySelector(".manacost").setAttribute("style", "display: none;");
 
-                if (ability.abilityCooldown != "")
+                if (!isEmpty(ability.abilityCooldown))
                     div.querySelector(".hero_skill_cooldown").innerHTML = format(ability.abilityCooldown);
                 else
                     div.querySelector(".cooldown").setAttribute("style", "display: none;");
@@ -110,13 +113,10 @@
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
-            document.getElementById("view-on-dotabuff").setAttribute("style", "display: none;");
         },
 
         updateLayout: function (element, viewState, lastViewState) {
-            /// <param name="element" domElement="true" />
-
-            // TODO: Respond to changes in viewState.
+            window.scrollTo(0, 0);
         }
     });
 
@@ -153,6 +153,12 @@
             return str[0];
 
         return str.join(" / ");
+    }
+
+    function playSound(path) {
+        var sound = document.createElement('audio');
+        sound.src = path;
+        sound.autoplay = true;
     }
 
     Array.prototype.unique = function () { var o = {}, i, l = this.length, r = []; for (i = 0; i < l; i += 1) o[this[i]] = this[i]; for (i in o) r.push(o[i]); return r; };

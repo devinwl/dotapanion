@@ -14,6 +14,13 @@
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
+                WinJS.Application.onsettings = function (e) {
+                    e.detail.applicationcommands = {
+                        "legalNotices": { href: "pages/legalNotices/legalnotices.html", title: "Legal notices" },
+                        "aboutPane": { href: "pages/about/about.html", title: "About" }
+                    };
+                    WinJS.UI.SettingsFlyout.populateSettings(e);
+                }
             } else {
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
@@ -29,6 +36,7 @@
             var LOCAL_HEROES_JSON = "/heroes.json";
             var LOCAL_ITEMS_JSON = "/items.json";
             var LOCAL_GLOSSARY_JSON = "/glossary.json";
+            var URL_DOTA2_BLOG_FEED = 'http://blog.dota2.com/feed/';
             var heroesParsed = "";
             var itemsParsed = "";
             var heroesList = new WinJS.Binding.List;
@@ -43,8 +51,8 @@
             });
             heroes.then(
                 function (xhr) {
-                    var heroes_json = JSON.parse(xhr.responseText).heroes;
-                    loadData(heroes_json, heroesList);
+                    heroesParsed = JSON.parse(xhr.responseText).heroes;
+                    loadData(heroesParsed, heroesList);
                 },
                 function (xhr) {
                     return WinJS.xhr({ url: LOCAL_HEROES_JSON, }).then(
@@ -54,7 +62,7 @@
                         },
                         function (error) {
                             WinJS.log && WinJS.log("Could not load online or local heroes JSON file");
-                    });
+                        });
                 }
             )
             .then(function () {
@@ -77,7 +85,7 @@
                         },
                         function (error) {
                             WinJS.log && WinJS.log("Could not load online or local items JSON file");
-                    });
+                        });
                 }
             )
             .then(function () {
@@ -101,6 +109,28 @@
                         function (error) {
                             WinJS.log && WinJS.log("Could not load online or local glossary JSON file");
                         });
+                }
+            )
+            .then(
+                function () {
+                    return WinJS.xhr({
+                        url: URL_DOTA2_BLOG_FEED,
+                        headers: {
+                            "If-Modified-Since": "Mon, 27 Mar 1972 00:00:00 GMT"
+                        }
+                    }).then(
+                        function (response) {
+                            var x = 0;
+                        },
+                        function (error) {
+                            var y = 0;
+                        }
+                    )
+                }
+            )
+            .then(
+                function () {
+                    return loadHeroDataAsync(heroesParsed);
                 }
             )
             .done(function () {
@@ -144,7 +174,6 @@
                 args.setPromise(WinJS.UI.processAll().then(function () {
                     document.getElementById("heroes").addEventListener("click", heroesTab, false);
                     document.getElementById("items").addEventListener("click", itemsTab, false);
-                    document.getElementById("view-on-dotabuff").addEventListener("click", dotabuffTab, false);
 
                     WinJS.Application.sessionState.currentPage = "heroes";
 
@@ -203,6 +232,39 @@
         for (var i = 0; i < json.length; i++) {
             list.push(json[i]);
         }
+    }
+
+    function loadHeroDataAsync(heroesJSON) {
+        var y = 0;
+        return new WinJS.Promise(function (c, e, p) {
+            for (var i = 0; i < heroesJSON.length; i++) {
+                downloadImageAsync(heroesJSON[i].heroNameBasic).then(
+                    function (complete) {
+                    },
+                    function(error) {
+                        console.log('got an error');
+                    });
+            }
+            c();
+        });
+    }
+
+    function downloadImageAsync(name) {
+        return new WinJS.Promise(function (c, e, p) {
+            var url = 'ms-appx:///images/heroes/' + name + '.png';
+            return WinJS.xhr({ url: url }).then(
+                function (success) {
+                    c();
+                },
+                function (error) {
+                    console.log('need to download: ' + name);
+                    e();
+                },
+                function (progress) {
+                    p();
+                }
+            );
+        });
     }
 
     app.oncheckpoint = function (args) {

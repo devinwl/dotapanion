@@ -16,7 +16,33 @@ Quick stats:
 - 582 downloads
 - 17 reviews
 
-A review from a user:
+Some reviews from users:
 > *Good clean app* by Dylan
+>
 > 5/5 stars
+>
 > Simple and straightforward. Would love to see you take a crack at porting this to windowsphone.
+
+> *I like this apps* by Yusuf
+>
+> 5/5 stars
+> 
+> can be improved by: adding search charm (windows key+Q) adding hero's suitable item adding a website (dota-utilities, dota-blog, etc) thanks that's all and nice start!
+
+> *Very Nice!!!* by Julian
+> 
+> 4/5 stars
+> 
+> Quite complete, but most hero skills do not show damage in the description. Would be useful if it did. Update : the 3 row gives better view now!! Doesn't feel like wasting space anymore. Some skills description still doesn't show damage though and perhaps showing hero portraits instead of hero icons in snapped view is better, makes it easier to find heroes while rapidly scrolling down. Great app and very quick updates on newly released heroes!
+
+> *Great Start* by Eric
+>
+> 4/5 stars
+> 
+> This looks like the best Dota 2 app to me. The only other thing I would like is tips on how to play each character.
+
+> *Incredible! (Increíble!!!)* by Johannes
+>
+> 5/5 stars
+> 
+> THE best App of dota 2! has it all!

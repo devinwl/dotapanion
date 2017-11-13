@@ -4,15 +4,19 @@
 }
 
 #heroListView .win-item {
-    background-color: transparent!important;
+    background-color: #0B1217!important;
     text-transform:capitalize;
-    height: 206px!important;
-    width: 278px;
+    height: 170px!important;
+    width: 185px;
 }
 
-#heroListView .win-item img {
-    width: 278px!important;
-    height: 156px!important;
+#heroListView .win-item .full {
+    width: 185px!important;
+    height: 100px!important;
+}
+
+#heroListView .win-item .mini {
+    display: none;
 }
 
 #heroListView .win-container:hover{
@@ -20,7 +24,7 @@
 }
 
 #heroListView h3 {
-    color:#b93e3e!important;
+    color:#b93e3e;
 }
 
 #heroListView h5 {
@@ -57,10 +61,28 @@
     height: 6%;
 }
 
+@media (min-resolution: 120dpi), (min-width: 321px) and (max-width: 1366px) {
+    #heroListView .win-item {
+        background-color: transparent!important;
+        text-transform:capitalize;
+        height: 155px!important;
+        width: 202px;
+    }
+
+    #heroListView .win-item .full {
+        width: 202px!important;
+        height: 106px!important;
+    }
+
+    #heroListView .win-container {
+        margin: 10px!important;
+    }
+}
+
 @media (-ms-view-state: snapped) {
     #heroListView {
         margin-top: 0px;
-        height: 85%;
+        height: 80%;
     }
     #heroListView .win-surface {
         -ms-flex-direction: column;
@@ -76,9 +98,22 @@
         -ms-flex-direction: row;
     }
 
-    #heroListView .win-item img {
-        width: 128px!important;
-        height: 72px!important;
+    #heroListView .win-item .full {
+        display: none;
+    }
+
+    #heroListView .win-item .mini {
+        display: block;
+        width: 48px;
+        height: 72px;
+        background: #0B1217;
+        padding-top: 16px;
+        padding-left: 16px;
+    }
+
+    #heroListView .win-item .mini img {
+        width: 32px;
+        height: 32px;
     }
 
     #heroListView .win-container {
@@ -89,13 +124,35 @@
     }
 
     #heroListView .text-container {
-        width: 165px;
+        width: 226px;
         padding-right: 25px;
     }
 
     #heroFilterBar {
         margin-left: 20px;
-        margin-bottom: 20px;
-        height: 13%;
+        height: 20%;
     }
+}
+
+@media (-ms-view-state: snapped) and (min-device-width: 1920px) and (max-resolution: 100dpi) {
+    #heroListView {
+        height: 86%;
+    }
+
+    #heroFilterBar {
+        height: 14%
+    }
+
+}
+
+#heroListView .int {
+    color: #1a87f9!important;
+}
+
+#heroListView .agi {
+    color: #2bab01!important;
+}
+
+#heroListView .str {
+    color:#b93e3e!important;
 }

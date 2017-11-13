@@ -51,7 +51,7 @@
 
     #itemListView {
         margin-top: 0px;
-        height: 89%;
+        height: 90%;
     }
 
     #itemListView .win-surface {
@@ -87,6 +87,12 @@
     #itemFilterBar {
         margin-left: 20px;
         margin-bottom: 30px;
+    }
+}
+
+@media (-ms-view-state: snapped) and (min-resolution: 120dpi) {
+    #itemListView {
+        height: 86%;
     }
 }
 

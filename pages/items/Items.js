@@ -9,10 +9,7 @@
     var emptyFilter = ";;";
 
     WinJS.UI.Pages.define("/pages/items/items.html", {
-        // This function is called whenever a user navigates to this page. It
-        // populates the page elements with the app's data.
         ready: function (element, options) {
-            // TODO: Initialize the page here.
             WinJS.Application.sessionState.currentPage = "items";
 
             var lV = document.getElementById("itemListView").winControl;
@@ -41,12 +38,13 @@
                 lV.layout = { type: WinJS.UI.ListLayout };
             }
             else {
-                lV.layout = { type: WinJS.UI.GridLayout };
+                lV.layout = { type: WinJS.UI.GridLayout, disableBackdrop: true };
             }
 
             /* Restore previous scroll location in item view */
             if (WinJS.Application.sessionState.itemsScroll) {
                 msSetImmediate(function () {
+                    console.log("restoring to: " + WinJS.Application.sessionState.itemsScroll);
                     lV.scrollPosition = WinJS.Application.sessionState.itemsScroll;
                 });
             }
@@ -63,7 +61,7 @@
                 lV.layout = { type: WinJS.UI.ListLayout };
             }
             else {
-                lV.layout = { type: WinJS.UI.GridLayout };
+                lV.layout = { type: WinJS.UI.GridLayout, disableBackdrop: true };
             }
 
             if (WinJS.Application.sessionState.itemFormedFilter) {
@@ -91,8 +89,6 @@
 
             h3.innerText = item.data.itemName.toUpperCase();
             h3.setAttribute("class", item.data.itemQuality);
-
-            //div.appendChild(h5);
 
             var h5 = document.createElement("span");
             var itemcost = document.createElement("span");
@@ -125,6 +121,7 @@
         var lV = document.getElementById("itemListView").winControl;
 
         WinJS.Application.sessionState.itemsScroll = lV.scrollPosition;
+        console.log(lV.scrollPosition);
 
         WinJS.Navigation.navigate("/pages/itemDetail/itemDetail.html", { item: item, index: args.detail.itemIndex });
     }
@@ -188,7 +185,6 @@
     }
 
     function filterFunction(item) {
-
         var result = true;
 
         if (formedFilter)
@@ -205,11 +201,5 @@
         }
 
         return result;
-    }
-
-    function groupFilterFunction(item) {
-
-        return true;
-
     }
 })();

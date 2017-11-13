@@ -40,21 +40,30 @@
 	display: block;
 }
 
+.hero_team_type {
+    width: 100%;
+    background: #0B1217;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hero_team_type > .type {
+    font-weight: bold;
+    float: right;
+    padding-right: 5px;
+}
+
+.hero_team_type > .team {
+    padding-left: 5px;
+}
+
 .hero_roles {
 	padding-left: 7%;
 	padding-right: 7%;
 	overflow: hidden;
 	padding-top: 2%;
 	padding-bottom: 2%;
-}
-
-.hero_roles h2 {
-	margin: 0;
-	text-align: center;
-	margin-bottom: 3%;
-	font-size: 1.2em;
-	text-transform: uppercase;
-	font-weight: bold;
 }
 
 .hero_roles ul {
@@ -218,6 +227,15 @@
     -ms-flex-pack: start;
 }
 
+.hero_sound {
+    text-align: center;
+    width: 100%;
+}
+
+.hero_sound img {
+    vertical-align: middle;
+}
+
 @media (min-width: 321px) and (max-width: 1400px) {
     .box {
         width: 300px;
@@ -250,7 +268,7 @@
     }
 
     .box {
-        width: 100%;
+        width: 96%;
         padding: 2%;
     }
 
@@ -262,8 +280,16 @@
 	    background: #192934;
     }
 
+    .hero_team_type > .type {
+        padding-right: 25px;
+    }
+
+    .hero_team_type > .team {
+        padding-left: 25px;
+    }
+
     .hero_bio {
-        width: 100%!important;
+        width: 96%!important;
         color: #8399a8;
     }
 

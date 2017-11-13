@@ -1,0 +1,27 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>Legal notices flyout</title>
+
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+        <link href="legalnotices.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="legalNotices" data-win-control="WinJS.UI.SettingsFlyout" aria-label="Legal notices settings flyout"
+                data-win-options="{width:'narrow'}">
+            <div class="win-header" style="background-color:#2a4253">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+                <div class="win-label">Legal notices</div>
+            </div>
+            <div class="win-content">
+                <b>Dota 2</b> is &copy; Valve Corporation 2012.  Dotapanion is not affiliated with Valve Corporation.<br /><br />
+                All images and text descriptions are properties of Valve Corporation.
+            </div>
+        </div>
+        <!-- ENDTEMPLATE -->
+    </body>
+</html>

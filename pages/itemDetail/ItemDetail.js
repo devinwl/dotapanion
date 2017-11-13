@@ -11,7 +11,6 @@
 
             var item = options && options.item ? options.item : Heroes.heroes.getAt(0);
             WinJS.Application.sessionState.currentItem = item;
-            document.getElementById("view-on-dotabuff").setAttribute("style", "");
 
             element.querySelector(".titlearea .pagetitle").textContent = item.itemName;
             element.querySelector(".item_header > img").src = "/images/items/" + item.itemNameBasic + ".png";
@@ -85,7 +84,6 @@
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
-            document.getElementById("view-on-dotabuff").setAttribute("style", "display: none");
         },
 
         updateLayout: function (element, viewState, lastViewState) {
@@ -172,6 +170,9 @@
                 break;
             case "hp_regen":
                 property = '+ <span class="item_bonus">' + val + '</span> <em>HP Regeneration</em>';
+                break;
+            case "bonus_movement":
+                property = '+ <span class="item_bonus">' + val + '</span> <em>Movement Speed</em>';
                 break;
             default:
                 if(prop) {

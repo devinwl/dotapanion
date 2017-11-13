@@ -66,6 +66,7 @@
     <Content Include="images\heroes\bloodseeker.png" />
     <Content Include="images\heroes\bounty_hunter.png" />
     <Content Include="images\heroes\brewmaster.png" />
+    <Content Include="images\heroes\bristleback.png" />
     <Content Include="images\heroes\broodmother.png" />
     <Content Include="images\heroes\centaur.png" />
     <Content Include="images\heroes\chaos_knight.png" />
@@ -81,6 +82,7 @@
     <Content Include="images\heroes\dragon_knight.png" />
     <Content Include="images\heroes\drow_ranger.png" />
     <Content Include="images\heroes\earthshaker.png" />
+    <Content Include="images\heroes\elder_titan.png" />
     <Content Include="images\heroes\enchantress.png" />
     <Content Include="images\heroes\enigma.png" />
     <Content Include="images\heroes\faceless_void.png" />
@@ -101,6 +103,7 @@
     <Content Include="images\heroes\luna.png" />
     <Content Include="images\heroes\lycan.png" />
     <Content Include="images\heroes\magnataur.png" />
+    <Content Include="images\heroes\medusa.png" />
     <Content Include="images\heroes\meepo.png" />
     <Content Include="images\heroes\mirana.png" />
     <Content Include="images\heroes\morphling.png" />
@@ -130,6 +133,7 @@
     <Content Include="images\heroes\shredder.png" />
     <Content Include="images\heroes\silencer.png" />
     <Content Include="images\heroes\skeleton_king.png" />
+    <Content Include="images\heroes\skywrath_mage.png" />
     <Content Include="images\heroes\slardar.png" />
     <Content Include="images\heroes\slark.png" />
     <Content Include="images\heroes\sniper.png" />
@@ -144,6 +148,8 @@
     <Content Include="images\heroes\tower_dire.png" />
     <Content Include="images\heroes\tower_radiant.png" />
     <Content Include="images\heroes\treant.png" />
+    <Content Include="images\heroes\troll_warlord.png" />
+    <Content Include="images\heroes\tusk.png" />
     <Content Include="images\heroes\undying.png" />
     <Content Include="images\heroes\ursa.png" />
     <Content Include="images\heroes\vengefulspirit.png" />
@@ -173,6 +179,7 @@
     <Content Include="images\icons\roles\initiator.png" />
     <Content Include="images\icons\roles\jungler.png" />
     <Content Include="images\icons\roles\lane support.png" />
+    <Content Include="images\icons\roles\ganker.png" />
     <Content Include="images\icons\roles\nuker.png" />
     <Content Include="images\icons\roles\pusher.png" />
     <Content Include="images\icons\roles\support.png" />
@@ -357,6 +364,7 @@
     <Content Include="images\miniheroes\bm_storm.png" />
     <Content Include="images\miniheroes\bounty_hunter.png" />
     <Content Include="images\miniheroes\brewmaster.png" />
+    <Content Include="images\miniheroes\bristleback.png" />
     <Content Include="images\miniheroes\broodmother.png" />
     <Content Include="images\miniheroes\centaur.png" />
     <Content Include="images\miniheroes\chaos_knight.png" />
@@ -373,6 +381,7 @@
     <Content Include="images\miniheroes\drow.png" />
     <Content Include="images\miniheroes\drow_ranger.png" />
     <Content Include="images\miniheroes\earthshaker.png" />
+    <Content Include="images\miniheroes\elder_titan.png" />
     <Content Include="images\miniheroes\enchantress.png" />
     <Content Include="images\miniheroes\enigma.png" />
     <Content Include="images\miniheroes\faceless_void.png" />
@@ -424,6 +433,7 @@
     <Content Include="images\miniheroes\shredder.png" />
     <Content Include="images\miniheroes\silencer.png" />
     <Content Include="images\miniheroes\skeleton_king.png" />
+    <Content Include="images\miniheroes\skywrath_mage.png" />
     <Content Include="images\miniheroes\slardar.png" />
     <Content Include="images\miniheroes\slark.png" />
     <Content Include="images\miniheroes\sniper.png" />
@@ -437,6 +447,8 @@
     <Content Include="images\miniheroes\tinker.png" />
     <Content Include="images\miniheroes\tiny.png" />
     <Content Include="images\miniheroes\treant.png" />
+    <Content Include="images\miniheroes\troll_warlord.png" />
+    <Content Include="images\miniheroes\tusk.png" />
     <Content Include="images\miniheroes\undying.png" />
     <Content Include="images\miniheroes\ursa.png" />
     <Content Include="images\miniheroes\vengefulspirit.png" />
@@ -516,6 +528,10 @@
     <Content Include="images\spellicons\brewmaster_storm_dispel_magic.png" />
     <Content Include="images\spellicons\brewmaster_storm_wind_walk.png" />
     <Content Include="images\spellicons\brewmaster_thunder_clap.png" />
+    <Content Include="images\spellicons\bristleback_bristleback.png" />
+    <Content Include="images\spellicons\bristleback_quill_spray.png" />
+    <Content Include="images\spellicons\bristleback_viscous_nasal_goo.png" />
+    <Content Include="images\spellicons\bristleback_warpath.png" />
     <Content Include="images\spellicons\broodmother_incapacitating_bite.png" />
     <Content Include="images\spellicons\broodmother_insatiable_hunger.png" />
     <Content Include="images\spellicons\broodmother_poison_sting.png" />
@@ -589,6 +605,12 @@
     <Content Include="images\spellicons\earthshaker_echo_slam.png" />
     <Content Include="images\spellicons\earthshaker_enchant_totem.png" />
     <Content Include="images\spellicons\earthshaker_fissure.png" />
+    <Content Include="images\spellicons\elder_titan_ancestral_spirit.png" />
+    <Content Include="images\spellicons\elder_titan_earth_splitter.png" />
+    <Content Include="images\spellicons\elder_titan_echo_stomp.png" />
+    <Content Include="images\spellicons\elder_titan_echo_stomp_spirit.png" />
+    <Content Include="images\spellicons\elder_titan_natural_order.png" />
+    <Content Include="images\spellicons\elder_titan_return_spirit.png" />
     <Content Include="images\spellicons\enchantress_enchant.png" />
     <Content Include="images\spellicons\enchantress_impetus.png" />
     <Content Include="images\spellicons\enchantress_natures_attendants.png" />
@@ -863,6 +885,10 @@
     <Content Include="images\spellicons\skeleton_king_hellfire_blast.png" />
     <Content Include="images\spellicons\skeleton_king_reincarnation.png" />
     <Content Include="images\spellicons\skeleton_king_vampiric_aura.png" />
+    <Content Include="images\spellicons\skywrath_mage_ancient_seal.png" />
+    <Content Include="images\spellicons\skywrath_mage_arcane_bolt.png" />
+    <Content Include="images\spellicons\skywrath_mage_concussive_shot.png" />
+    <Content Include="images\spellicons\skywrath_mage_mystic_flare.png" />
     <Content Include="images\spellicons\slardar_amplify_damage.png" />
     <Content Include="images\spellicons\slardar_bash.png" />
     <Content Include="images\spellicons\slardar_slithereen_crush.png" />
@@ -916,6 +942,16 @@
     <Content Include="images\spellicons\treant_living_armor.png" />
     <Content Include="images\spellicons\treant_natures_guise.png" />
     <Content Include="images\spellicons\treant_overgrowth.png" />
+    <Content Include="images\spellicons\troll_warlord_battle_trance.png" />
+    <Content Include="images\spellicons\troll_warlord_berserkers_rage.png" />
+    <Content Include="images\spellicons\troll_warlord_berserkers_rage_active.png" />
+    <Content Include="images\spellicons\troll_warlord_fervor.png" />
+    <Content Include="images\spellicons\troll_warlord_whirling_axes_melee.png" />
+    <Content Include="images\spellicons\troll_warlord_whirling_axes_ranged.png" />
+    <Content Include="images\spellicons\tusk_frozen_sigil.png" />
+    <Content Include="images\spellicons\tusk_ice_shards.png" />
+    <Content Include="images\spellicons\tusk_snowball.png" />
+    <Content Include="images\spellicons\tusk_walrus_punch.png" />
     <Content Include="images\spellicons\undying_decay.png" />
     <Content Include="images\spellicons\undying_flesh_golem.png" />
     <Content Include="images\spellicons\undying_soul_rip.png" />
@@ -983,6 +1019,8 @@
     <Content Include="items.json" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <Content Include="pages\about\about.css" />
+    <Content Include="pages\about\about.html" />
     <Content Include="pages\heroDetail\heroDetail.css" />
     <Content Include="pages\heroDetail\heroDetail.html" />
     <Content Include="pages\heroDetail\heroDetail.js" />
@@ -996,13 +1034,20 @@
     <Content Include="pages\items\items.css" />
     <Content Include="pages\items\items.html" />
     <Content Include="pages\items\items.js" />
+    <Content Include="pages\legalNotices\legalnotices.css" />
+    <Content Include="pages\legalNotices\legalnotices.html" />
     <Content Include="pages\search\searchResults.css" />
     <Content Include="pages\search\searchResults.html" />
     <Content Include="pages\search\searchResults.js" />
+    <Content Include="sounds\tusk_rare_01.mp3" />
     <None Include="Dotapanion_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="bld\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment
