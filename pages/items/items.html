@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>items</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="items.css" rel="stylesheet" />
+    <script src="items.js"></script>
+</head>
+<body>
+    <div class="items fragment">
+        <div id="DotapanionCategoryTemplate"
+            data-win-control="WinJS.Binding.Template">
+            <h2 data-win-bind="innerText: title"></h2>
+        </div>
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Items</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div id="itemFilterBar">
+                <select id="itemCatFilter">
+                    <option>Category</option>
+                    <option id="consumables">Consumables</option>
+                    <option id="attributes">Attributes</option>
+                    <option id="armaments">Armaments</option>
+                    <option id="arcane">Arcane</option>
+                    <option id="common">Common</option>
+                    <option id="support">Support</option>
+                    <option id="caster">Caster</option>
+                    <option id="weapons">Weapons</option>
+                    <option id="armor">Armor</option>
+                    <option id="artifacts">Artifacts</option>
+                    <option id="secret shop">Secret Shop</option>
+                </select>
+                <select id="itemQualityFilter">
+                    <option>Quality</option>
+                    <option id="artifact">Artifact</option>
+                    <option id="epic">Epic</option>
+                    <option id="rare">Rare</option>
+                    <option id="common">Common</option>
+                    <option id="component">Component</option>
+                    <option id="consumable">Consumable</option>
+                </select>
+                <input id="itemTextFilter" placeholder="Filter by text..." />
+            </div>
+            <div id="itemListView"
+                    data-win-control="WinJS.UI.ListView"
+                    data-win-options="{ itemDataSource: Data.items.dataSource,
+                                        groupDataSource: Data.items.groups.dataSource,
+                                        groupHeaderTemplate: select('#DotapanionCategoryTemplate'),
+                                        selectionMode: 'none',
+                                        layout: {type: WinJS.UI.GridLayout, disableBackdrop: true } }"></div>
+        </section>
+    </div>
+</body>
+</html>

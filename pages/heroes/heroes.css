@@ -1,0 +1,101 @@
+﻿#heroListView {
+    width: 100%;
+    height: 94%;
+}
+
+#heroListView .win-item {
+    background-color: transparent!important;
+    text-transform:capitalize;
+    height: 206px!important;
+    width: 278px;
+}
+
+#heroListView .win-item img {
+    width: 278px!important;
+    height: 156px!important;
+}
+
+#heroListView .win-container:hover{
+    outline: #b93e3e solid 3px;
+}
+
+#heroListView h3 {
+    color:#b93e3e!important;
+}
+
+#heroListView h5 {
+    color: #8399a8!important;
+}
+
+#heroListView .win-container {
+    background-color: transparent!important;
+    margin: 20px!important;
+}
+
+#heroListView .win-container img {
+    display: block;
+}
+
+#heroListView .text-container {
+    background: #0B1217;
+    padding: 5px;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+}
+
+#heroListView .win-surface {
+    margin-left: 100px!important;
+}
+
+#heroListView .win-groupheader {
+    padding: 20px!important;
+}
+
+#heroFilterBar {
+    margin-left: 120px;
+    height: 6%;
+}
+
+@media (-ms-view-state: snapped) {
+    #heroListView {
+        margin-top: 0px;
+        height: 85%;
+    }
+    #heroListView .win-surface {
+        -ms-flex-direction: column;
+        overflow-x: hidden;
+        width: 100%;
+        margin-left: 0px!important;
+    }
+
+    #heroListView .win-item {
+        height: 72px!important;
+        width: 320px;
+        display: -ms-flexbox;
+        -ms-flex-direction: row;
+    }
+
+    #heroListView .win-item img {
+        width: 128px!important;
+        height: 72px!important;
+    }
+
+    #heroListView .win-container {
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin-top: 2px!important;
+        margin-bottom: 2px!important;
+    }
+
+    #heroListView .text-container {
+        width: 165px;
+        padding-right: 25px;
+    }
+
+    #heroFilterBar {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        height: 13%;
+    }
+}

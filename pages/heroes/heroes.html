@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>heroes</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="heroes.css" rel="stylesheet" />
+    <script src="heroes.js"></script>
+</head>
+<body>
+    <div class="heroes fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Heroes</span>
+            </h1>
+        </header>
+        <div id="DotapanionHeroTemplate"
+            data-win-control="WinJS.Binding.Template">
+            <h2 data-win-bind="innerText: heroName"></h2>
+        </div>
+
+        <div id="DotapanionTeamTemplate"
+            data-win-control="WinJS.Binding.Template">
+            <h2 data-win-bind="innerText: title"></h2>
+        </div>
+        <section aria-label="Main content" role="main">
+            <div id="heroFilterBar">
+                <select id="heroTypeFilter">
+                    <option>Attack Type</option>
+                    <option id="melee">Melee</option>
+                    <option id="ranged">Ranged</option>
+                </select>
+                <select id="heroRoleFilter">
+                    <option>Role</option>
+                    <option id="carry">Carry</option>
+                    <option id="disabler">Disabler</option>
+                    <option id="lane support">Lane Support</option>
+                    <option id="initiator">Initiator</option>
+                    <option id="jungler">Jungler</option>
+                    <option id="support">Support</option>
+                    <option id="durable">Durable</option>
+                    <option id="nuker">Nuker</option>
+                    <option id="pusher">Pusher</option>
+                    <option id="escape">Escape</option>
+                </select>
+                <select id="heroAttrFilter">
+                    <option>Primary Attribute</option>
+                    <option id="strength">Strength</option>
+                    <option id="agility">Agility</option>
+                    <option id="intelligence">Intelligence</option>
+                </select>
+                <input id="heroTextFilter" placeholder="Filter by text..." />
+            </div>
+            <div id="heroListView"
+                    data-win-control="WinJS.UI.ListView"
+                    data-win-options="{ itemDataSource: Data.heroes.dataSource,
+                                        selectionMode: 'none',
+                                        layout: {type: WinJS.UI.GridLayout} }"></div>
+        </section>
+    </div>
+</body>
+</html>

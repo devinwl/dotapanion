@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dotapanion</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Dotapanion references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <!-- <script src="/pages/search/searchResults.js"></script> -->
+</head>
+<body>
+    <div id="progressRingText">
+        <progress id="dotapanion_loader" class="win-ring win-large withText"></progress>
+    </div>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/heroes/heroes.html'}"></div>
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'heroes', label:'Heroes', icon:'people', section: 'selection'}" type="button"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'items', label:'Items', icon:'list', section: 'selection'}" type="button"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'view-on-dotabuff', label:'Dotabuff', icon:'globe'}" type="button" style="display: none;"></button>
+    </div>
+</body>
+</html>

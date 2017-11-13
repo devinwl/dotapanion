@@ -1,0 +1,174 @@
+{
+	"glossary": [
+		{
+			"glossaryTerm": "Carry",
+			"glossaryDefinition": "A hero that will become more useful later in the game if they gain a significant gold advantage.  Carry heroes are typically weak in the early game but grow stronger as the game progresses.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Disabler",
+			"glossaryDefinition": "A hero that has a guaranteed disable for one or more of their spells.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Disable",
+			"glossaryDefinition": "A 'disable' is a spell that stops an enemy hero from attacking, moving, casting spells, or any combination of the these.",
+			"glossaryReference": "Disabler"
+		},
+		{
+			"glossaryTerm": "Lane Support",
+			"glossaryDefinition": "A hero that is helpful during early-game laning protecting your team's carry and allowing them to farm.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Initiator",
+			"glossaryDefinition": "A hero that excels at starting teamfights.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Jungler",
+			"glossaryDefinition": "A hero that can effectively farm from neutral creeps inside the jungle during the early game.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Jungle",
+			"glossaryDefinition": "The 'jungle' is the area directly to the right (for Radiant) and to the left (for Dire) which is full of neutral creeps.  Trees are scattered amongst the area which makes scouting and general map awareness difficult in the area.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Creep",
+			"glossaryDefinition": "The basic unit in a game of Dota.  There are three distinct types of creeps: melee creeps, ranged creeps and seige creeps.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Melee Creep",
+			"glossaryDefinition": "A melee creep is a basic unit that can only attack at melee range.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Ranged Creep",
+			"glossaryDefinition": "A ranged creep is a basic unit that possesses a ranged attack.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Seige Creep",
+			"glossaryDefinition": "A seige creep is a basic unit that possesses a ranged attack and prefers to target enemy structures.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Neutral Creep",
+			"glossaryDefinition": "Neutral Creeps are units which are hostile to both teams but will only attack when provoked.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Durable",
+			"glossaryDefinition": "A hero that has the ability to last longer in teamfights because of high hit-points and/or magic resistance.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Pusher",
+			"glossaryDefinition": "A hero that is capable of quickly destroying enemy structures at any point during the game.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Support",
+			"glossaryDefinition": "A hero that can focus less on amassing gold and items, and more on using their abilities to gain an advantage for the team.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Nuker",
+			"glossaryDefinition": "A hero that can quickly kill enemy heroes using high damage spells with low cooldowns.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Escape",
+			"glossaryDefinition": "A hero that can avoid damage by moving short distances quickly or by using certain spells to nullify damage.",
+			"glossaryReference": "Role"
+		},
+		{
+			"glossaryTerm": "Farm",
+			"glossaryDefinition": "Achieving a high number of last-hits on enemy creeps.  See 'Creep Score'.",
+			"glossaryReference": "Creep Score"
+		},
+		{
+			"glossaryTerm": "Creep Score",
+			"glossaryDefinition": "'Creep Score' is the number of last-hits a player has had on enemy creeps.  Each last-hit provides extra bonus gold.  Sometimes referred to as 'cs' (short for creep shore).",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Strength",
+			"glossaryDefinition": "Strength is one of the three stats every hero possesses.  Strength always increases a hero's hit points by 19 and hit point regeneration by 0.03 for every point in Strength.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Agility",
+			"glossaryDefinition": "Agility is one of the three stats every hero possesses.  Agility always increases a hero's attack speed by one for every point in Agility, and 7 points in Agility will increase a hero's armor by 1.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Intelligence",
+			"glossaryDefinition": "Intelligence is one of the three stats every hero possesses.  Intelligence always increases a hero's mana by 13 and mana regeneration by 0.03 for every point in Intelligence.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Primary Attribute",
+			"glossaryDefinition": "The primary attribute of a hero provides 1 additional damage for each point in the Primary Attribute.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Teamfight",
+			"glossaryDefinition": "A 'teamfight' is a skirmish between the two teams (Radiant and Dire) where the majority of the team is present.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Map Awareness",
+			"glossaryDefinition": "'Map Awareness' refers to an overall sense of where heroes (allied and enemy), creeps and other objectives are on the map.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Lane",
+			"glossaryDefinition": "The map has 3 different lanes referred to as the top lane, the middle lane and bottom lane.  Creeps will follow each of the three lanes from their own ancient to the enemy's ancient.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Short Lane",
+			"glossaryDefinition": "The 'Short Lane' is the top lane for Radiant and bottom lane for Dire.  It is comparitively harder than other lanes due to the distance from friendly towers.  Also called Suicide or Hard Lane.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Suicide Lane",
+			"glossaryDefinition": "See 'Short Lane'.",
+			"glossaryReference": "Short Lane"
+		},
+		{
+			"glossaryTerm": "Hard Lane",
+			"glossaryDefinition": "See 'Short Lane'.",
+			"glossaryReference": "Short Lane"
+		},
+		{
+			"glossaryTerm": "Long Lane",
+			"glossaryDefinition": "The 'Long Lane' is the bottom lane for Radiant and top lane for Dire.  It is comparitively easier than other lanes due to the proximity of friendly towers (allowing for an easier retreat).  Also called Suicide or Hard Lane.",
+			"glossaryReference": "Short Lane"
+		},
+		{
+			"glossaryTerm": "Safe Lane",
+			"glossaryDefinition": "See 'Long Lane'.",
+			"glossaryReference": "Long Lane"
+		},
+		{
+			"glossaryTerm": "Map",
+			"glossaryDefinition": "The map refers to the entire playing field of a game of Dota.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "Tower",
+			"glossaryDefinition": "A structure that possesses a long-range attack.  Deals heavy damage to heroes, especially in the early game.  Towers prefer to attack creeps when they are nearby and the tower is not currently attacking anything else.  Each lane has six towers each, three for each team.",
+			"glossaryReference": "general"
+		},
+		{
+			"glossaryTerm": "True Sight",
+			"glossaryDefinition": "Units and structures with True Sight can see invisible units and reveal illusions.",
+			"glossaryReference": "general"
+		}
+	]
+}

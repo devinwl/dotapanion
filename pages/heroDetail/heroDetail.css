@@ -1,0 +1,317 @@
+﻿em {
+    color:#fff;
+    font-style:normal;
+}
+
+.hero {
+    overflow: auto;
+	height: 100%;
+    font-size:1.2em;
+    margin:0;
+    padding:0;
+    color: #8399a8;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-align: stretch;
+    -ms-flex-pack: start;
+    padding-left: 120px;
+}
+
+.hero_header {
+	width: 100%;
+}
+
+.hero_basics {
+	width: 450px;
+}
+
+.hero_bio {
+    width: 50%!important;
+    color: #4a5c68;
+}
+
+.hero_bio > p {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.hero_header img {
+	width:100%;
+	display: block;
+}
+
+.hero_roles {
+	padding-left: 7%;
+	padding-right: 7%;
+	overflow: hidden;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.hero_roles h2 {
+	margin: 0;
+	text-align: center;
+	margin-bottom: 3%;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.hero_roles ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 100%;
+}
+
+.hero_roles ul > li {
+	width: 50%;
+	float: left;
+	font-size: 1.0em;
+	text-transform: capitalize;
+}
+
+.hero_roles img {
+	width: 32px;
+	vertical-align: middle;
+	margin-right: 2%;
+}
+
+.hero_stats {
+    padding-left: 5%;
+    padding-right: 5%;
+    clear: both;
+    overflow: hidden;
+	padding-bottom: 3%;
+    font-size: 1.2em;
+}
+
+.hero_stats_left, .hero_stats_right {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    width: 50%;
+    float: left;
+}
+
+.hero_stats_left li, .hero_stats_right li {
+	padding: 4%;
+	height: 45px;
+}
+
+.hero_stats_left img, .hero_stats_right img {
+	vertical-align: middle;
+	margin-right: 4%;
+}
+
+.hero_stats_right img {
+    width: 20%;
+}
+
+.spd {
+	text-indent: -10%;
+	padding-top: 4.6%!important;
+}
+
+.spd img {
+	width: 30%;
+}
+
+.prim_attr {
+    color: #9e7d1c;
+}
+
+.prim_attr em {
+    color: #d8ab24;
+    font-weight: bold;
+}
+
+.perlevel {
+    font-size:1.0em!important;
+}
+
+.type {
+    color:#b93e3e;
+}
+
+.box {
+    width: 450px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.box p {
+    font-size:1.2em;
+    margin:0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.hero_skill_basics {
+    margin-top: 4%!important;
+    margin-bottom: 2%!important;
+    padding-top: 1%!important;
+    padding-bottom: 1%!important;
+    text-transform: uppercase;
+    font-size: 1.0em!important;
+}
+
+.hero_skill_name {
+    font-weight:400;
+    color:#b93e3e;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:1.4em;
+    margin:0;
+    padding:0;
+    display: inline-block;
+    width: 70%;
+}
+
+.hero_skill_icon {
+    width:25%;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+.hero_skill_costs {
+    font-size:1.0em;
+    width:100%;
+    margin-top: 4%;
+    position: relative;
+}
+
+.hero_skill_costs img {
+    width: 6%;
+    vertical-align: middle;
+    margin-right: 1%;
+}
+
+.hero_skill_properties {
+    list-style-type:none;
+    clear:both;
+    font-size:1em;
+    width:100%;
+    margin:0;
+    padding:0;
+    text-transform: uppercase;
+    padding-top: 2%;
+}
+
+.hero_skill_properties_right {
+    margin-top: 2%;
+}
+
+.scepter {
+    color:#6FE871;
+}
+
+.flavor_text {
+	color: #4a5c68;
+	text-align: center;
+	font-size: 0.8em;
+	padding-top: 5%;
+}
+
+.hero_abilities {
+    display: -ms-flexbox;
+    -ms-flex-pack: start;
+}
+
+@media (min-width: 321px) and (max-width: 1400px) {
+    .box {
+        width: 300px;
+        font-size: 0.7em;
+    }
+
+    .hero_basics {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) and (-ms-view-state: snapped) {
+    .hero {
+        -ms-flex-direction: column;
+        overflow-x: hidden;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .hero_basics {
+        width: 100%;
+    }
+
+    .hero_stats {
+        font-size: 1.0em;
+    }
+
+    .hero_skill_icon {
+        border: none;
+    }
+
+    .box {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .box p {
+        font-size: .8em;
+    }
+
+    .box:nth-child(odd) {
+	    background: #192934;
+    }
+
+    .hero_bio {
+        width: 100%!important;
+        color: #8399a8;
+    }
+
+    .hero_bio_text {
+        width: 89%!important;
+    }
+
+    .hero_stats_left img, .hero_stats_right img {
+	    width: 30%;
+    }
+
+    .spd img {
+	    width: 45%;
+    }
+
+    .spd {
+        text-indent: -14%;
+    }
+
+    .dmg {
+        padding-top: 7.6%!important;
+    }
+
+    .hero_skill {
+        width: 89%;
+    }
+
+    .hero_abilities {
+        -ms-flex-direction: column;
+        width: 100%;
+    }
+
+    .hero_skill_basics {
+        font-size: 0.6em!important;
+    }
+
+    .hero_skill_name {
+        font-size:1.2em;
+    }
+
+    .hero_skill_costs {
+        font-size:.7em;
+    }
+    .hero_skill_properties {
+        font-size:.6em;
+    }
+
+    .flavor_text {
+	    font-size: 0.8em;
+    }
+}

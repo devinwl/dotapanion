@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>itemDetail</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="itemDetail.css" rel="stylesheet" />
+    <script src="itemDetail.js"></script>
+</head>
+<body>
+    <div class="itemDetail fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Default Item</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="item">
+                <div class="item_header">
+				    <img src="/images/items/branches.png" />
+				    <ul class="item_basics">
+					    <li class="gold"><img src="/images/icons/icon_gold.png" ?><span class="item_goldcost">{itemCost}</span></li>
+					    <li><p class="item_lore">{itemLore}</p></li>
+				    </ul>
+			    </div>
+			    <div class="item_info">
+				    <p>{itemDescription}</p>
+				    <ul class="item_stats">
+						    <li>Property: Value</li>
+				    </ul>
+				    <div class="item_costs">
+				        <div class="item_cost manacost"><img src="/images/icons/icon_mana.png" /><span class="item_manacost">1</span></div>
+				        <div class="item_cost cooldown"><img src="/images/icons/icon_cd.png" /><span class="item_cooldown">1</span></div>
+				    </div>
+			    </div>
+			    <div class="item_recipe">
+				    <h2>Recipe</h2>
+				    <ul class="item_recipe_list">
+					    <li class="item_recipe_item"><img src="/images/items/branches.png" /><div class="item_recipe_text"><span class="quality">{itemName}</span><br /><span class="gold"><img src="/images/icons/icon_gold.png" /><span class="item_recipe_goldcost"></span></span></div></li>
+				        <li><img src="/images/items/recipe.png" ?><div class="item_recipe_text"><span class="component">Recipe</span><br /><span class="gold"><img src="/images/icons/icon_gold.png" />{itemRecipeCost}</span></div></li>
+				    </ul>
+			    </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

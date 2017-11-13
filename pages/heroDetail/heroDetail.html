@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>heroDetail</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="heroDetail.css" rel="stylesheet" />
+    <script src="heroDetail.js"></script>
+</head>
+<body>
+    <div class="heroDetail fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Default Hero</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="hero">
+                <div class="hero_basics">
+                    <div class="hero_header">
+				        <img src="/images/heroes/default.png" />
+			        </div>
+                    <div class="hero_roles">
+			            <h2><span class="type"></span></h2>
+			            <ul>
+                            <li><img src="/images/icons/roles/carry.png" /> <span>carry</span></li>
+                            <li><img src="/images/icons/roles/nuker.png" /> <span>nuker</span></li>
+                            <li><img src="/images/icons/roles/lane support.png" /> <span>lane support</span></li>
+			            </ul>
+		            </div>
+		            <div class="hero_stats">
+			            <ul class="hero_stats_left">
+				            <li class="str stat"><img src="/images/icons/icon_str.png" /><em class="strBase">1.0</em> + <span class="strPer">1.0</span></li>
+				            <li class="agi stat"><img src="/images/icons/icon_agi.png" /><em class="agiBase">1.0</em> + <span class="agiPer">1.0</span></li>
+				            <li class="int stat"><img src="/images/icons/icon_int.png" /><em class="intBase">1.0</em> + <span class="intPer">1.0</span></li>
+			            </ul>
+			            <ul class="hero_stats_right">
+				            <li class="dmg stat"><img src="/images/icons/icon_dmg.png" /><em class="heroBaseDmg">1 - 2</em></li>
+				            <li class="spd stat"><img src="/images/icons/icon_speed.png" /><em class="heroBaseMoveSpeed">300</em></li>
+				            <li class="arm stat"><img src="/images/icons/icon_armor.png" /><em class="heroBaseArmor">1.0</em></li>
+			            </ul>
+		            </div>
+                </div>
+                <div class="hero_abilities">
+			        <div class="box">
+				        <div class="hero_skill">
+					        <img src="/images/spellicons/rubick_empty1.png" class="hero_skill_icon" />
+					        <h2 class="hero_skill_name">{abilityName}</h2>
+					        <p class="hero_skill_basics">
+						        <span class="hero_skill_behavior">Ability: <em>{abilityBehavior}</em><br /></span>
+						        <span class="hero_skill_target">Affects: <em>{abilityTarget}</em><br /></span>
+						        <span class="hero_skill_damage">Damage: <em>{abilityDamageType}</em><br /></span>
+					        </p>
+					        <p class="hero_skill_descr">{abilityDescription}</p>
+					        <div class="hero_skill_costs manacost"><img src="/images/icons/icon_mana.png" title="Mana Cost" alt="Mana Cost" /><span class="hero_skill_manacost">1</span></div>
+					        <div class="hero_skill_costs cooldown"><img src="/images/icons/icon_cd.png" title="Cooldown" alt="Cooldown" /><span class="hero_skill_cooldown">1</span></div>
+					        <ul class="hero_skill_properties">
+						        <li class="hero_skill_properties_left">
+						        </li>
+						        <li class="hero_skill_properties_right">
+							        <span><em>PROPERTY: </em>VALUE</span>
+						        </li>
+					        </ul>
+                            <div class="flavor_text">
+					            <p class="hero_skill_lore">{abilityLore}</p>
+				            </div>
+				        </div>
+			        </div>
+                </div>
+                <div class="box hero_bio">
+				    <p class="hero_bio_text">{heroBio}</p>
+			    </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
